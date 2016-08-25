@@ -1,8 +1,6 @@
-class Staff
-  # toppage
-  class TopController < ApplicationController
-    def index
-      render action: 'index'
-    end
+# TopPage
+class Staff::TopController < ApplicationController
+  def index
+    render action: 'index'
   end
 end

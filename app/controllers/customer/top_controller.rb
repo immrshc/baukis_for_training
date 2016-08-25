@@ -1,8 +1,6 @@
-class Customer
-  # toppage
-  class TopController < ApplicationController
-    def index
-      render action: 'index'
-    end
+# TopPage
+class Customer::TopController < ApplicationController
+  def index
+    render action: 'index'
   end
 end
