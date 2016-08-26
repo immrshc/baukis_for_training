@@ -16,4 +16,4 @@
 /tmp
 
 # Ignore SECRET_KEY_BASE of production.
-/.env
+.env
