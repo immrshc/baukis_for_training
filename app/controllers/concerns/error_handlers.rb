@@ -1,3 +1,4 @@
+# エラー処理のモジュール
 module ErrorHandlers extend ActiveSupport::Concern
   # エラーを定義
   class Forbidden < ActionController::ActionControllerError; end
