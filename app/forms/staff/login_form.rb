@@ -1,0 +1,5 @@
+# ログイン時のスタッフの入力フォーム
+class Staff::LoginForm
+  include ActiveModel::Model
+  attr_accessor :email, :password
+end

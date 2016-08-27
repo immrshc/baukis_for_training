@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   # テンプレートを埋め込むレイアウトのapp/views/layouts/ファイル名を指定
   layout :set_layout
 
-  include ErrorHandlers #if Rails.env.production?
+  include ErrorHandlers # if Rails.env.production?
 
   private
 
