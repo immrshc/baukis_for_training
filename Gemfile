@@ -31,7 +31,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'rspec-rails'
 gem 'spring-commands-rspec'
 gem 'capybara'
-gem 'factory_girl'
+gem 'factory_girl_rails', '~> 4.4.1'
 gem 'dotenv-rails'
 gem 'rubocop', '~> 0.41.2', require: false
 
