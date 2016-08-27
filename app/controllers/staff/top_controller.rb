@@ -1,7 +1,7 @@
 # TopPage
 class Staff::TopController < ApplicationController
   def index
-    raise
+    raise ActiveRecord::RecordNotFound
     render action: 'index'
   end
 end
