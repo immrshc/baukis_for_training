@@ -2,12 +2,15 @@ Rails.application.routes.draw do
   namespace :staff do
     root 'top#index'
     get 'login' => 'sessions#new', as: :login
-    post 'sesson' => 'sessons#create', as: :session
-    delete 'sesson' => 'session#destory'
+    post 'session' => 'sessions#create', as: :session
+    delete 'session' => 'session#destory'
   end
 
   namespace :admin do
     root 'top#index'
+    get 'login' => 'session#new', as: :login
+    post 'session' => 'session#create', as: :session
+    delete 'session' => 'session#destroy'
   end
 
   namespace :customer do
