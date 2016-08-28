@@ -9,6 +9,7 @@ class Staff::SessionsController < Staff::Base
     end
   end
 
+  # フォーム情報からのスタッフの検索、認証
   def create
     @form = Staff::LoginForm.new(params[:staff_login_form])
     # フォームのメールアドレスからStaffMemberインスタンスを検索
@@ -33,6 +34,7 @@ class Staff::SessionsController < Staff::Base
     end
   end
 
+  # ログアウト
   def destroy
     session.delete(:staff_member_id)
     flash.notice = 'ログアウトしました。'
