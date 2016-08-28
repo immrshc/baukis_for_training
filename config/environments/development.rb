@@ -34,4 +34,10 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  config.baukis = {
+    staff: { host: 'localhost', path: '' },
+    admin: { host: 'localhost', path: 'admin' },
+    customer: { host: 'localhost', path: 'mypage' }
+  }
 end
