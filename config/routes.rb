@@ -11,15 +11,16 @@ Rails.application.routes.draw do
     get 'login' => 'sessions#new', as: :login
     post 'session' => 'sessions#create', as: :session
     delete 'session' => 'sessions#destroy'
+    resources :staff_members
   end
 
   namespace :customer do
     root 'top#index'
   end
 
-  # デフォルトで設定されているルートURLパス(/)の更新
+  # update of default root path (/)
   root 'errors#routing_error'
 
-  # 上記以外の任意のURL(*anything)の設定
+  # setting of anyother url (*anything)
   get '*anything' => 'errors#routing_error'
 end
