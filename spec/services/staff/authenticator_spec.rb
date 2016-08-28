@@ -22,5 +22,4 @@ RSpec.describe Staff::Authenticator do
       expect(Staff::Authenticator.new(m).authenticate('pw')).to be_falsey
     end
   end
-
 end
